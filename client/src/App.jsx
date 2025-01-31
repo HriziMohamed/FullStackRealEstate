@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Website from "./pages/Website";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Properties from "./pages/properties/Properties";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Website />} />
+            <Route path="/properties" element={<Properties />} />
           </Route>
         </Routes>
       </Suspense>
